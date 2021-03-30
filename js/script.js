@@ -23,6 +23,7 @@ fancy.forEach(item => {
 ;
 const menu = document.querySelector('.hamburger');
 const navigation = document.querySelector('.main-navigation');
+const navigationLinks = document.querySelectorAll('.main-navigation__link');
 // const popup = document.querySelector('.heeader-col__wrapper-podl');
 const headerOne = document.querySelector('.header-col--left ');
 const headerTwo = document.querySelector('.header-col--right ');
@@ -64,6 +65,16 @@ menu.addEventListener('click', () => {
   }
 
 });
+navigationLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    if (navigation.classList.contains('open')) {
+      openMenu();
+    } else {
+      closedMenu();
+    }
+  })
+})
 ;
 let myFirstSlider = new Swiper('.faces__wrapper', {
   // effect: 'fade',

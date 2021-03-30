@@ -599,6 +599,7 @@ button {
   min-height: 894px;
   position: relative;
   background-color: #101111;
+  min-width: 750px;
 }
 
 .header__logo {
@@ -657,32 +658,32 @@ button {
 }
 
 .header-col__link.trafic {
-  right: 229px;
+  left: 669px;
   top: 21%;
 }
 
 .header-col__link.sales {
-  left: 40%;
+  left: 380px;
   top: 35%;
 }
 
 .header-col__link.marketing {
-  left: 11%;
+  left: 100px;
   top: 51%;
 }
 
 .header-col__link.bots {
-  left: 18%;
+  left: 170px;
   bottom: 26%;
 }
 
 .header-col__link.start {
-  right: 41%;
+  left: 500px;
   bottom: 11%;
 }
 
 .header-col__link.create {
-  right: 18%;
+  left: 640px;
   bottom: 30%;
 }
 
@@ -4234,13 +4235,15 @@ button {
 
 .offer__header {
   font-size: 17px;
-  font-weight: 300;
+  font-family: 'Gilroy-SemiBold';
+  font-weight: 700;
 }
 
 .offer__header-main {
   font-size: 35.2px;
   margin: 0;
   font-family: 'Gilroy-SemiBold';
+  color: #1b9cd8;
 }
 
 .offer__text {
@@ -4310,6 +4313,11 @@ button {
   width: 50%;
 }
 
+.benefits__img {
+  display: block;
+  margin: 0 auto;
+}
+
 .benefits__img-wrapper {
   padding-right: 140px;
 }
@@ -4333,6 +4341,10 @@ button {
   font-size: 21px;
   font-family: "Gilroy";
   font-weight: 500;
+}
+
+.benefits__item:last-child {
+  padding-top: 55px;
 }
 
 .about {
@@ -4514,10 +4526,14 @@ button {
   margin-bottom: 90px;
 }
 
-.legend span {
-  font-size: 92px;
+.legend img {
+  margin-top: 20px;
   margin-bottom: 50px;
-  font-family: 'CinioText-Medium';
+}
+
+.legend__logo {
+  width: 69px;
+  height: 69px;
 }
 
 .legend__text {
@@ -4990,6 +5006,7 @@ button {
   margin: 28px 0 0 0;
   position: relative;
   clear: both;
+  font-weight: 400;
 }
 
 #fancy-inputs label.input span {
@@ -5383,10 +5400,6 @@ button {
 }
 
 @media (max-width: 1199px) {
-  .header-col--left {
-    background-position: top;
-  }
-
   .header__logo {
     left: 48px;
     top: 8px;
@@ -5419,21 +5432,13 @@ button {
   }
 
   .header-col__link.sales {
-    left: 45%;
-    top: 36%;
-  }
-
-  .header-col__link.sales {
-    top: 15%;
+    top: 320px;
+    left: 360px;
   }
 
   .header-col__link.marketing {
-    left: 4%;
-    top: 59%;
-  }
-
-  .header-col__link.marketing {
-    top: 21%;
+    left: 90px;
+    top: 420px;
   }
 
   .header-col__link.bots {
@@ -5441,7 +5446,7 @@ button {
   }
 
   .header-col__link.start {
-    right: 21%;
+    left: 480px;
     bottom: 12%;
   }
 
@@ -5531,13 +5536,29 @@ button {
 
 @media (max-width: 1199px) and (max-width: 991px) {
   .header-col__link.create {
-    right: 15%;
-    bottom: 26%;
-  }
-
-  .header-col__link.create {
     right: 5%;
     bottom: 20%;
+  }
+}
+
+@media (max-width: 1199px) and (max-width: 767px) {
+  .header-col__link.create {
+    right: 0;
+    left: 283px;
+    bottom: 21%;
+  }
+}
+
+@media (max-width: 1199px) and (width: 414px) {
+  .header-col__link.create {
+    left: 311px;
+  }
+}
+
+@media (max-width: 1199px) and (max-width: 365px) {
+  .header-col__link.create {
+    left: 260px;
+    bottom: 30%;
   }
 }
 
@@ -5557,6 +5578,11 @@ button {
     width: 100%;
   }
 
+  .header-col--left {
+    background-position: top;
+    min-width: 768px;
+  }
+
   .header-col__link.big {
     font-size: 65px;
     left: 33%;
@@ -5570,10 +5596,6 @@ button {
   .header-col__link.trafic {
     right: 10%;
     top: 25%;
-  }
-
-  .header-col__link.start {
-    right: 31%;
   }
 
   .main-navigation {
@@ -5606,7 +5628,7 @@ button {
   }
 
   .about__text {
-    font-size: 20px;
+    font-size: 19px;
   }
 
   .advantages__item {
@@ -5664,7 +5686,11 @@ button {
     margin-bottom: 45px;
   }
 
-  .legend span {
+  .legend {
+    margin-bottom: 45px;
+  }
+
+  .legend img {
     margin-bottom: 25px;
   }
 
@@ -5703,7 +5729,7 @@ button {
   .packages__item {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   .faces__wrapper {
@@ -5756,16 +5782,28 @@ button {
 }
 
 @media (max-width: 767px) {
+  .container {
+    max-width: 325px;
+  }
+
   .header-col--left {
     background-size: cover;
     min-height: 400px;
     height: 400px;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
+
+  .header__logo {
+    left: 15px;
+    top: 7px;
   }
 
   .header-col__link.big {
     font-size: 35px;
-    left: 31%;
-    top: 53%;
+    top: 202px;
+    left: 92px;
   }
 
   .header-col__link.bussines,
@@ -5782,16 +5820,24 @@ button {
     top: 22%;
   }
 
+  .header-col__link.trafic {
+    left: 280px;
+    top: 25%;
+  }
+
   .header-col__link.sales {
+    left: 180px;
     top: 33%;
   }
 
   .header-col__link.marketing {
     top: 45%;
+    left: 30px;
   }
 
   .header-col__link.start {
-    right: 37%;
+    left: 200px;
+    bottom: 8%;
   }
 
   .header-col__offer {
@@ -5811,7 +5857,7 @@ button {
   }
 
   .benefits__item {
-    border-bottom: 3px solid #ed186a;
+    border-bottom: 2px solid #ed186a;
     padding-top: 40px;
   }
 
@@ -5819,20 +5865,20 @@ button {
     display: none;
   }
 
+  .benefits__text {
+    width: 40%;
+  }
+
   .about .container {
     max-width: 320px;
   }
 
-  .about__text {
-    text-align: left;
-  }
-
-  .about__text span {
-    padding-left: 10px;
-  }
-
   .advantages {
     padding: 40px 0 40px 0;
+  }
+
+  .advantages .container {
+    max-width: 325px;
   }
 
   .advantages__item {
@@ -5848,6 +5894,14 @@ button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  .legend .container {
+    max-width: 325px;
+  }
+
+  .services .container {
+    max-width: 325px;
   }
 
   .services__list {
@@ -5868,16 +5922,38 @@ button {
     text-align: center;
   }
 
+  .services__digit--double {
+    right: 31px;
+  }
+
   .services__digit {
     font-size: 30px;
   }
 
+  .services__quote {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .packages {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
   .packages .container {
-    max-width: 340px;
+    max-width: 325px;
   }
 
   .packages__list {
     margin-bottom: 37px;
+  }
+
+  .packages__description {
+    font-size: 10px;
+  }
+
+  .faces__title {
+    font-size: 17px;
   }
 
   .faces__worker.swiper-slide {
@@ -5911,6 +5987,14 @@ button {
             justify-content: center;
   }
 
+  .form-check__label::before {
+    top: 2px;
+  }
+
+  .form-check .form-check__input:checked + label::after {
+    top: -1px;
+  }
+
   .form-check__wrapper--second {
     width: auto;
   }
@@ -5922,6 +6006,10 @@ button {
 
   .form-check__section-step-two {
     width: 80%;
+  }
+
+  .mark__dsc {
+    font-size: 16px;
   }
 
   .social {
@@ -5936,6 +6024,65 @@ button {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+
+@media (max-width: 575px) {
+  .header-col__link.big {
+    top: 210px;
+    left: 122px;
+  }
+}
+
+@media (max-width: 365px) {
+  .header-col__link.big {
+    top: 202px;
+    left: 92px;
+  }
+
+  .header-col__link.trafic {
+    left: 270px;
+    top: 23%;
+  }
+
+  .header-col__link.sales {
+    top: 130px;
+    left: 140px;
+  }
+
+  .header-col__link.marketing {
+    left: 13px;
+  }
+
+  .header-col__link.start {
+    left: 163px;
+  }
+
+  .offer__text {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+  .packages .container {
+    max-width: 300px;
+  }
+
+  .form-check__wrapper--second {
+    padding: 25px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 460px) {
+  .header-col__link.big {
+    top: 234px;
+    left: 141px;
+  }
+}
+
+@media (width: 414px) {
+  .header-col__link.start {
+    bottom: 6%;
   }
 }
 
