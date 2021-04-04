@@ -60,8 +60,11 @@ menu.addEventListener('click', () => {
 
   if (navigation.classList.contains('open')) {
     openMenu();
+
   } else {
     closedMenu();
+
+
   }
 
 });
@@ -70,11 +73,16 @@ navigationLinks.forEach(link => {
     navigation.classList.toggle('open');
     if (navigation.classList.contains('open')) {
       openMenu();
+      document.body.style.overflow = "";
+      headerTwo.style.order = "2";
+      headerOne.style.order = "1";
     } else {
       closedMenu();
+
+
     }
-  })
-})
+  });
+});
 ;
 let myFirstSlider = new Swiper('.faces__wrapper', {
   // effect: 'fade',

@@ -480,6 +480,12 @@ button {
   display: block;
 }
 
+.orderChange {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
 @font-face {
   font-family: "Сalibri";
   font-display: swap;
