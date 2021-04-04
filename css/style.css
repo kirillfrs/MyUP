@@ -5706,12 +5706,6 @@ button {
     margin-bottom: 50px;
   }
 
-  .packages__item {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    margin-bottom: 40px;
-  }
-
   .faces__wrapper {
     background-size: auto;
   }
@@ -5939,6 +5933,12 @@ button {
     margin-bottom: 37px;
   }
 
+  .packages__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 40px;
+  }
+
   .packages-offer__item {
     padding-left: 15px;
   }
@@ -6069,6 +6069,10 @@ button {
   }
 
   .packages .container {
+    max-width: 300px;
+  }
+
+  .mark .container {
     max-width: 300px;
   }
 
