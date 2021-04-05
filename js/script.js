@@ -23,9 +23,9 @@ fancy.forEach(item => {
 ;
 const menu = document.querySelector('.hamburger');
 const navigation = document.querySelector('.main-navigation');
+const navigationLinks = document.querySelectorAll('.main-navigation__link');
 // const popup = document.querySelector('.heeader-col__wrapper-podl');
-const headerOne = document.querySelector('.header-col--left ');
-const headerTwo = document.querySelector('.header-col--right ');
+const headerWrapper = document.querySelector('.header__wrapper');
 
 
 const openMenu = () => {
@@ -35,19 +35,19 @@ const openMenu = () => {
 
   menu.classList.add('is-active');
   navigation.classList.add('open');
-  headerTwo.style.order = "1";
-  headerOne.style.order = "2";
+  headerWrapper.classList.add('open');
   document.body.style.overflow = "hidden";
 };
 
 const closedMenu = () => {
   // navigation.parentNode.classList.add('animate__backInUp');
   // navigation.parentNode.classList.remove('animate__backInDown');
-  headerTwo.style.order = "";
-  headerOne.style.order = "";
+
 
   menu.classList.remove('is-active');
   navigation.classList.remove('open');
+  headerWrapper.classList.remove('open');
+
   document.body.style.overflow = "";
 };
 
@@ -59,10 +59,27 @@ menu.addEventListener('click', () => {
 
   if (navigation.classList.contains('open')) {
     openMenu();
+
   } else {
     closedMenu();
+
+
   }
 
+});
+navigationLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    if (navigation.classList.contains('open')) {
+      openMenu();
+      document.body.style.overflow = "";
+
+    } else {
+      closedMenu();
+
+
+    }
+  });
 });
 ;
 let myFirstSlider = new Swiper('.faces__wrapper', {
