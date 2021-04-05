@@ -610,10 +610,6 @@ button {
           align-items: center;
 }
 
-.header__wrapper.open {
-  background-color: black;
-}
-
 .header__logo {
   padding-top: 8px;
   margin-left: 40px;
@@ -5457,6 +5453,10 @@ button {
 
   .header__x-wrap {
     width: 325px;
+  }
+
+  .header__wrapper.open {
+    background-color: black;
   }
 
   .header__main-link.big {
