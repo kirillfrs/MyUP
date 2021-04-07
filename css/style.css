@@ -590,7 +590,7 @@ button {
 
 .header {
   position: relative;
-  background: url("../img/bg-test.jpg") no-repeat center/contain;
+  background: url("../img/bg-test2.jpg") no-repeat center/contain;
   margin-bottom: 60px;
 }
 
@@ -599,6 +599,7 @@ button {
   width: 500px;
   display: block;
   margin: 0 auto;
+  max-height: 574px;
 }
 
 .header__wrapper {
@@ -4235,7 +4236,7 @@ button {
 
 .offer__header {
   font-size: 17px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .offer {
@@ -4244,16 +4245,17 @@ button {
 }
 
 .offer__header-main {
-  font-size: 35.2px;
+  font-size: 28.2px;
   margin: 0;
   color: #1b9cd8;
 }
 
 .offer__text {
-  margin: 0;
+  margin: 0 auto;
   margin-top: 16px;
   margin-bottom: 28px;
   font-size: 20px;
+  max-width: 61%;
 }
 
 .offer__btn {
@@ -4311,7 +4313,7 @@ button {
 .benefits__img {
   display: block;
   margin: 0 auto;
-  max-height: 300px;
+  max-height: 200px;
 }
 
 .benfits__img-wrapper--second {
@@ -4346,7 +4348,7 @@ button {
 
 .about__text {
   margin: 0;
-  font-size: 27px;
+  font-size: 20px;
   font-family: 'MyriadPro';
   font-weight: 400;
 }
@@ -4453,13 +4455,13 @@ button {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 25%;
           flex: 0 0 25%;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: bold;
   text-align: left;
 }
 
 .what-we-do__item span {
-  font-size: 60px;
+  font-size: 58px;
   margin-right: 38px;
   font-family: "GOTHICB";
 }
@@ -4469,7 +4471,7 @@ button {
 }
 
 .what-we-do__smoke {
-  margin-bottom: 90px;
+  margin-bottom: 60px;
 }
 
 .what-we-do__smoke-img {
@@ -4488,13 +4490,13 @@ button {
 }
 
 .legend__logo {
-  width: 69px;
-  height: 69px;
+  width: 102px;
+  height: 102px;
 }
 
 .legend__text {
   margin: 0;
-  font-size: 27px;
+  font-size: 20px;
   margin-bottom: 90px;
 }
 
@@ -4519,7 +4521,7 @@ button {
 
 .services__text {
   margin: 0;
-  font-size: 26px;
+  font-size: 20px;
   margin-bottom: 60px;
   line-height: 36px;
 }
@@ -4564,7 +4566,7 @@ button {
 
 .services__quote {
   text-align: right;
-  font-size: 26px;
+  font-size: 18px;
   display: block;
 }
 
@@ -4575,6 +4577,7 @@ button {
   padding-top: 90px;
   background-size: 100%;
   padding-bottom: 110px;
+  background-position: center;
 }
 
 .packages .container {
@@ -4582,7 +4585,7 @@ button {
 }
 
 .packages__header {
-  font-size: 34px;
+  font-size: 33px;
   font-weight: 900;
   font-style: 'MyriadPro';
   margin-bottom: 90px;
@@ -4685,7 +4688,7 @@ button {
 }
 
 .packages__description {
-  font-size: 28px;
+  font-size: 20px;
 }
 
 .faces {
@@ -4726,7 +4729,7 @@ button {
 
 .faces__title {
   margin: 0;
-  font-size: 34px;
+  font-size: 33px;
   color: #46bde1;
 }
 
@@ -4793,7 +4796,7 @@ button {
   position: relative;
   margin: 0;
   margin-top: 16px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
 }
 
@@ -4812,6 +4815,7 @@ button {
 .mark {
   background: url("../img/form-bg.png") no-repeat;
   padding-top: 20px;
+  padding: 0 20px;
   background-size: 100% 100%;
   text-align: left;
   padding-bottom: 30px;
@@ -4824,13 +4828,13 @@ button {
 }
 
 .mark__title {
-  font-size: 45px;
+  font-size: 33px;
   margin: 0;
   margin-bottom: 35px;
 }
 
 .mark__title span {
-  font-size: 45px;
+  font-size: 33px;
   text-transform: uppercase;
   color: #46bde1;
 }
@@ -4838,7 +4842,7 @@ button {
 .form-check__step {
   margin: 0;
   color: #46bde1;
-  font-size: 34px;
+  font-size: 33px;
   margin-bottom: 30px;
 }
 
@@ -4853,7 +4857,7 @@ button {
 }
 
 .form-check__label {
-  font-size: 28px;
+  font-size: 20px;
   position: relative;
   margin-bottom: 10px;
   font-weight: 400;
@@ -4978,7 +4982,7 @@ button {
   position: absolute;
   top: 0;
   z-index: 1;
-  font-family: 'calibri';
+  font-family: 'Calibri';
   font-size: 18px;
   color: #fff;
   text-indent: 10px;
@@ -5024,7 +5028,7 @@ button {
   border-bottom: 3px solid #fff;
   background-color: transparent;
   color: #fff;
-  font-family: 'calibri';
+  font-family: 'Calibri';
   font-size: 18px;
   position: relative;
   z-index: 99;
@@ -5161,8 +5165,8 @@ button {
 .page-footer__phone,
 .page-footer__mail {
   margin: 0;
-  margin-bottom: 50px;
-  font-size: 26px;
+  margin-bottom: 40px;
+  font-size: 20px;
 }
 
 .social {
@@ -5361,6 +5365,7 @@ button {
 @media (max-width: 1199px) {
   .header__x-wrap {
     width: 450px;
+    max-height: 517px;
   }
 
   .header__logo {
@@ -5380,7 +5385,6 @@ button {
   }
 
   .header-col__offer {
-    padding-left: 40px;
     width: 100%;
   }
 
@@ -5453,6 +5457,7 @@ button {
 
   .header__x-wrap {
     width: 325px;
+    max-height: 374px;
   }
 
   .header__wrapper.open {
@@ -5494,7 +5499,7 @@ button {
   }
 
   .main-navigation__item {
-    font-size: 30px;
+    font-size: 20px;
     margin-right: 0;
     padding: 20px 0px;
     border-bottom: 1px solid #fff;
@@ -5502,6 +5507,10 @@ button {
 
   .offer {
     margin-bottom: 55px;
+  }
+
+  .offer__text {
+    max-width: none;
   }
 
   .about {
@@ -5568,6 +5577,11 @@ button {
 
   .legend img {
     margin-bottom: 25px;
+  }
+
+  .legend__logo {
+    width: 69px;
+    height: 69px;
   }
 
   .legend__text {
@@ -5706,7 +5720,7 @@ button {
   }
 
   .offer__header-main {
-    font-size: 25.2px;
+    font-size: 23.2px;
   }
 
   .header-col__offer {
@@ -5817,7 +5831,13 @@ button {
   }
 
   .packages-offer__item {
+    margin-bottom: 3px;
+    font-size: 16px;
     padding-left: 15px;
+  }
+
+  .packages__price {
+    font-size: 25px;
   }
 
   .packages__description {
@@ -5867,6 +5887,10 @@ button {
     top: -1px;
   }
 
+  .form-check .form-check__rights-wrapper .form-check__input--rights:checked + label::after {
+    top: 3px;
+  }
+
   .form-check__wrapper--second {
     width: auto;
   }
@@ -5907,6 +5931,11 @@ button {
   .header__x-wrap {
     width: 200px;
     min-height: 400px;
+  }
+
+  .header__main-link.big {
+    top: 22%;
+    left: -4px;
   }
 
   .offer__text {
