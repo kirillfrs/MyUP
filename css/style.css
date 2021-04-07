@@ -4358,7 +4358,7 @@ button {
 }
 
 .advantages {
-  padding: 90px 0 70px 0;
+  padding: 90px 0px 70px 0px;
   background-color: #973c96;
 }
 
@@ -4371,6 +4371,7 @@ button {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 0 20px;
 }
 
 .advantages__item {
@@ -5519,6 +5520,10 @@ button {
 
   .about__text {
     font-size: 19px;
+  }
+
+  .advantages__list {
+    padding: 0;
   }
 
   .advantages__item {
