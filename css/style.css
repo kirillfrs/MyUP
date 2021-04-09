@@ -5146,7 +5146,6 @@ button {
 }
 
 .spans {
-  font-weight: 18px;
   font-family: 'Calibri',sans-serif;
   font-weight: 400;
 }
@@ -5921,6 +5920,10 @@ button {
 
   .form-check__section-step-two {
     width: 80%;
+  }
+
+  #fancy-inputs label.input span span {
+    font-size: 16px;
   }
 
   .mark__dsc {
