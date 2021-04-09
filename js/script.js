@@ -129,6 +129,77 @@ let mySecondSlider = new Swiper('.faces-slist__wrapper', {
 myFirstSlider.controller.control = mySecondSlider;
 mySecondSlider.controller.control = myFirstSlider;
 ;
+const button = document.querySelector('.form-check__btn');
+const form = document.querySelector('.form-check');
+
+form.addEventListener('submit', (evt) => {
+  evt.preventDefault();
+  button.setAttribute('disabled', 'disabled');
+  button.style.backgroundColor = "#0069d9";
+  button.textContent = 'Отправлено';
+  setTimeout(() => {
+    button.textContent = 'Оставить заявку';
+    button.style.backgroundColor = "";
+    button.removeAttribute('disabled');
+  }, 5000);
+});
+
+
+// form.forEach((item) => {
+//   item.addEventListener('submit', (evt) => {
+//       evt.preventDefault();
+
+//       let statusMessage = document.createElement('div');
+//       statusMessage.classList.add('status');
+//       item.parentNode.appendChild(statusMessage);
+
+//       item.classList.add('animated', 'fadeOutUp');
+//       setTimeout(() => {
+//           item.style.display = 'none';
+//       }, 400);
+
+//       let statusImg = document.createElement('img');
+//       statusImg.setAttribute('src', message.spinner);
+//       statusImg.classList.add('animated', 'fadeInUp');
+//       statusMessage.appendChild(statusImg);
+
+//       let textMessage = document.createElement('div');
+//       textMessage.textContent = message.loading;
+//       statusMessage.appendChild(textMessage);
+
+
+
+//       const formData = new FormData(item);
+
+//       let api;
+//       item.closest('.popup-design') || item.classList.contains('calc_form') ? api = path.designer : api = path.question;
+//       console.log(api);
+
+//       postData(api, formData)
+//           .then(res => {
+//               console.log(res);
+//               statusImg.setAttribute('src', message.ok);
+//               textMessage.textContent = message.success;
+//           })
+//           .catch(() => {
+//               statusImg.setAttribute('src', message.fail);
+//               textMessage.textContent = message.success;
+//           })
+//           .finally(() => {
+//               clearInputs();
+//               setTimeout(() => {
+//                   statusMessage.remove();
+//                   item.style.display = "block";
+//                   item.classList.remove('fadeOutUp');
+//                   item.classList.add('fadeInUp');
+//               }, 5000);
+
+//           });
+
+
+//   });
+// });
+;
 
 new WOW({
   mobile: false,

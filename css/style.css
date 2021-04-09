@@ -4316,6 +4316,10 @@ button {
   max-height: 200px;
 }
 
+.benefits__img--first {
+  max-height: 225px;
+}
+
 .benfits__img-wrapper--second {
   height: 100%;
 }
@@ -4388,6 +4392,7 @@ button {
   height: 66px;
   position: relative;
   display: block;
+  margin: 0 auto;
   margin-bottom: 50px;
 }
 
@@ -5402,6 +5407,10 @@ button {
     background-color: transparent;
   }
 
+  .benefits__img--first {
+    height: auto;
+  }
+
   .benefits__img {
     height: auto;
   }
@@ -5511,6 +5520,10 @@ button {
   }
 
   .offer__text {
+    max-width: none;
+  }
+
+  .benefits .container {
     max-width: none;
   }
 
