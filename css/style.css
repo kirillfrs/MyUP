@@ -4988,7 +4988,7 @@ button {
   position: absolute;
   top: 0;
   z-index: 1;
-  font-family: 'Calibri';
+  font-family: 'Calibri',sans-serif;
   font-size: 18px;
   color: #fff;
   text-indent: 10px;
@@ -5034,7 +5034,7 @@ button {
   border-bottom: 3px solid #fff;
   background-color: transparent;
   color: #fff;
-  font-family: 'Calibri';
+  font-family: 'Calibri',sans-serif;
   font-size: 18px;
   position: relative;
   z-index: 99;
